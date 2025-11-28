@@ -5,9 +5,9 @@ const WeatherCard = (props) => {
     return (
       <>
         <Card>
-          <WeatherIcon weather={props.cityInfo.weather[0].main} />
           <Card.Text>{props.cityInfo.name}</Card.Text>
           <Card.Text>{props.cityInfo.weather[0].main}</Card.Text>
+          
         </Card>
       </>
     )

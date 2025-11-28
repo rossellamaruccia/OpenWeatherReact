@@ -39,7 +39,7 @@ class FetchWeather extends Component {
   render() {
     return (
       <>
-            <WeatherCard cityInfo={this.state.info} />
+            <WeatherCard cityInfo={this.state.info}/>
       </>
     )
   }
