@@ -4,7 +4,27 @@ import WeatherCard from "./WeatherCard"
 
 class FetchWeather extends Component {
   state = {
-    info: {},
+    info: {
+      name: "Palermo",
+      weather: [
+        {
+          description: "",
+          icon: "01d",
+          id: 800,
+          main: "",
+        },
+      ],
+      main: {
+        feels_like: 11.24,
+        grnd_level: 1008,
+        humidity: 45,
+        pressure: 1012,
+        sea_level: 1012,
+        temp: 12.74,
+        temp_max: 13.34,
+        temp_min: 12.29,
+      },
+    },
   }
 
   WeatherData = () => {
@@ -23,7 +43,9 @@ class FetchWeather extends Component {
       })
       .then((data) => {
         console.log(data)
-        this.setState({info: data})
+        this.setState({
+          info: data,
+        })
       })
       .catch((err) => {
         console.log(err)
@@ -37,11 +59,7 @@ class FetchWeather extends Component {
   }
 
   render() {
-    return (
-      <>
-            <WeatherCard cityInfo={this.state.info}/>
-      </>
-    )
+    return <WeatherCard cityInfo={this.state.info} />
   }
 }
 

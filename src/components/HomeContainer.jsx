@@ -14,12 +14,16 @@ const HomeContainer = () => {
   }
     return (
       <>
-        <Container fluid className="bg-body-tertiary">
-          <Row>
-            <Col>
-              <CitySelect changeAppState={changeAppState}/>
-              <FetchWeather city={city}/>
+        <Container fluid>
+          <Row className="align-items-center">
+            <Col></Col>
+            <Col xs={6} md={4} className="text-center">
+              <CitySelect changeAppState={changeAppState} />
             </Col>
+            <Col xs={6} md={4}>
+              <FetchWeather city={city} />
+            </Col>
+            <Col></Col>
           </Row>
         </Container>
       </>

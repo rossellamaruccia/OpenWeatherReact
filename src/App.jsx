@@ -8,8 +8,6 @@ import HomeContainer from './components/HomeContainer'
 import MyFooter from './components/MyFooter'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <MyNav />
