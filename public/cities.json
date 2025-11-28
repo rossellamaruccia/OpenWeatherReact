@@ -20,5 +20,21 @@
     {"city": "Perugia",
 "asin": "11111"},
     {"city": "Firenze",
-"asin": "11110"}
+"asin": "11110"},
+    {"city": "Bologna",
+"asin": "11100"},
+    {"city": "Genova",
+"asin": "11000"},
+    {"city": "Torino",
+"asin": "11001"},
+    {"city": "Milano",
+"asin": "11011"},
+    {"city": "Aosta",
+"asin": "110110"},
+    {"city": "Venezia",
+"asin": "110111"},
+    {"city": "Trento",
+"asin": "110101"},
+    {"city": "Trieste",
+"asin": "110001"}
 ]

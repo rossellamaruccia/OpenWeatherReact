@@ -1,4 +1,4 @@
-import { Card } from "react-bootstrap"
+
 import { Component } from "react"
 import WeatherCard from "./WeatherCard"
 
